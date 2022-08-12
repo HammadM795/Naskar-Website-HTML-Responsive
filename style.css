@@ -1,0 +1,174 @@
+* {
+  margin: 0%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER-START */
+.landing-page-image {
+  background-image: url(images/engine.png);
+  height: 130vh;
+  width: 100%;
+  background-size: cover;
+  position: absolute;
+  z-index: -3;
+}
+header {
+  background-color: white;
+  opacity: 90%;
+}
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.navbar ul {
+  padding: 25px;
+}
+.navbar li {
+  padding: 0px 20px;
+  list-style: none;
+  display: inline;
+}
+.navbar li a {
+  text-decoration: none;
+  color: #3f3f3f;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+.navbar li a:hover {
+  color: black;
+  padding-bottom: 8px;
+  border-bottom: 3px solid red;
+}
+.navbar li a.active {
+  color: black;
+  padding-bottom: 8px;
+  border-bottom: 3px solid red;
+}
+.landing-page {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+#logo {
+  margin-top: 9rem;
+  width: 46rem;
+}
+#landing-page-text {
+  color: white;
+  margin-top: 1.5rem;
+  font-size: 23px;
+  line-height: 32px;
+}
+.button {
+  background-color: #0e0d09;
+  color: white;
+  margin: 6rem 3rem;
+  padding: 9px 18px;
+  font-size: 22px;
+  cursor: pointer;
+  border: none;
+}
+.button:hover {
+  color: black;
+  background-color: white;
+}
+.social-icons {
+  position: absolute;
+  right: 4rem;
+  top: 14rem;
+  font-size: 24px;
+  cursor: pointer;
+}
+.fa-facebook-f {
+  color: black;
+  background-color: white;
+  padding: 5px 9px;
+  border-radius: 100%;
+}
+.fab:hover {
+  color: white;
+  background-color: black;
+}
+.fa-instagram {
+  color: black;
+  background-color: white;
+  padding: 5px 6px;
+  border-radius: 100%;
+  margin-top: 1rem;
+}
+/* HEADER-END */
+
+/* SINCE-1978-SECTION-START*/
+.since-bg-img {
+  background-image: url(images/White-image.png);
+  background-size: cover;
+  width: 100%;
+  height: 206vh;
+  position: absolute;
+  top: 36rem;
+  z-index: 1;
+}
+.since-data {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  top: 21rem;
+}
+span {
+  color: red;
+}
+.paragraph {
+  display: inline-flex;
+}
+h1 {
+  font-size: 48px;
+  text-align: center;
+}
+.since-detail {
+  text-align: left;
+  line-height: 28px;
+  margin: 1rem 2rem;
+}
+.paragraph-2 {
+  display: grid;
+  justify-content: center;
+}
+.team-paragraph {
+  line-height: 28px;
+  display: flex;
+  text-align: left;
+  flex-flow: column;
+  margin-top: 1rem;
+}
+#bold-para {
+  color: #3f3f3f;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+/* SINCE-1978-SECTION-END*/
+
+/* SUPPLIERS-SECTION */
+.suppliers {
+  background-image: url(images/dark-road-bg.png);
+  background-size: cover;
+  width: 100%;
+  height: 169vh;
+  position: relative;
+  top: 101rem;
+  z-index: 0;
+}
+/* SUPPLIERS-SECTION-END*/
+
+/* FOOTER-SECTION-START */
+.footer {
+  background-image: url(images/footer-background.png);
+  background-size: cover;
+  width: 100%;
+  height: 112vh;
+  position: relative;
+  top: 88rem;
+  z-index: 3;
+}
+/* FOOTER-SECTION-END */
