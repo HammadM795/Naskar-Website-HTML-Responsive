@@ -172,6 +172,7 @@ h1 {
 }
 #suppliers-logo {
   width: 90%;
+  height: auto;
   margin: 2.5rem;
 }
 /* SUPPLIERS-SECTION-END*/
