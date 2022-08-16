@@ -10,40 +10,48 @@
   width: 100%;
   background-size: cover;
   position: absolute;
-  z-index: -3;
 }
 header {
+  display: inline-block;
+  width: 100%;
   background-color: white;
   opacity: 90%;
+  position: relative;
 }
-.navbar {
-  justify-content: space-between;
-  align-items: center;
+nav {
   text-align: center;
 }
-.navbar ul {
-  padding: 25px;
+nav ul li {
+  display: inline-block;
+  padding: 15px 25px;
 }
-.navbar li {
-  padding: 0px 20px;
-  list-style: none;
-  display: inline;
-}
-.navbar li a {
+nav ul li a {
   text-decoration: none;
+  display: inline-block;
   color: #3f3f3f;
   font-weight: bold;
   transition: all 0.3s ease-in-out;
 }
-.navbar li a:hover {
+
+nav ul li a:hover {
   color: black;
   padding-bottom: 8px;
   border-bottom: 3px solid red;
 }
-.navbar li a.active {
+nav ul li a.active {
   color: black;
   padding-bottom: 8px;
   border-bottom: 3px solid red;
+}
+.toggle-btn {
+  width: 35px;
+  position: relative;
+  top: 40px;
+  right: 80px;
+  display: none;
+}
+.fa-bars {
+  font-size: 22px;
 }
 .landing-page {
   align-items: center;
@@ -63,7 +71,7 @@ header {
 .button {
   background-color: #0e0d09;
   color: white;
-  margin: 6rem 3rem;
+  margin: 5rem 3rem;
   padding: 9px 18px;
   font-size: 22px;
   cursor: pointer;
@@ -147,6 +155,10 @@ h1 {
   color: #3f3f3f;
   font-weight: bold;
   margin-top: 3rem;
+  font-size: 18px;
+}
+.paragraph-2 .buttons {
+  margin: 0%;
 }
 /* SINCE-1978-SECTION-END*/
 
@@ -173,7 +185,6 @@ h1 {
 #suppliers-logo {
   max-width: 100%;
   height: auto;
-  margin: 2.5rem;
 }
 /* SUPPLIERS-SECTION-END*/
 
@@ -231,3 +242,138 @@ h4 {
   margin-top: 3.5rem;
 }
 /* FOOTER-SECTION-END */
+
+/* Media Queries */
+@media only screen and (max-width: 767px) {
+  header {
+  }
+  nav li a:hover {
+    padding-bottom: 3px;
+    border-bottom: 2px solid red;
+  }
+  nav li a.active {
+    padding-bottom: 3px;
+    border-bottom: 2px solid red;
+  }
+  .toggle-btn {
+    display: block;
+    position: absolute;
+    right: 1.5rem;
+    top: 8px;
+  }
+  .landing-page-image {
+    width: 100%;
+    height: 50vh;
+    z-index: 90;
+  }
+  #logo {
+    width: 70%;
+    margin: 0%;
+  }
+  .landing-page {
+    z-index: 70;
+  }
+  #landing-page-text {
+    font-size: 10px;
+    line-height: 16px;
+    margin: 0%;
+  }
+  .social-icons {
+    top: 5rem;
+    font-size: 11px;
+    right: 1.5rem;
+  }
+  .fa-facebook-f {
+    padding: 3px 6px;
+  }
+  .fa-instagram {
+    padding: 3px 5px;
+    margin-top: 8px;
+  }
+  .button {
+    margin: 5px;
+    font-size: 6px;
+    padding: 5px 10px;
+  }
+  .since-bg-img {
+    height: 80vh;
+    top: 10.5rem;
+  }
+  .since-data {
+    top: 6rem;
+  }
+  .paragraph {
+    display: inline-flex;
+  }
+  h1 {
+    font-size: 18px;
+    text-align: center;
+  }
+  .since-detail {
+    font-size: 6px;
+    line-height: 10px;
+    margin: 0% 1rem;
+    padding: 5px;
+  }
+  .paragraph-2 {
+    font-size: 6px;
+  }
+  .team-paragraph {
+    line-height: 10px;
+    margin-top: 8px;
+  }
+  #bold-para {
+    margin-top: 8px;
+    line-height: 10px;
+    font-size: 7px;
+  }
+  .paragraph-2 .buttons {
+    margin: 0%;
+  }
+  .suppliers {
+    height: 90vh;
+    top: 28.8rem;
+  }
+  .suppliers-body {
+    top: 5rem;
+  }
+  .footer {
+    height: 44vh;
+    top: 20rem;
+  }
+  .footer-body {
+    bottom: -5.5rem;
+  }
+  .columns {
+    display: inline-flex;
+    font-size: 6px;
+  }
+  .manager {
+    margin: 0%;
+    line-height: 10px;
+  }
+  .address {
+    line-height: 11px;
+    margin: 0%;
+  }
+  h4 {
+    margin-bottom: 0px;
+  }
+  .menlyn {
+    margin: 5px;
+  }
+  .monday {
+    line-height: 11px;
+  }
+  .col-1 {
+    margin: 0%;
+  }
+  .col-2 {
+    margin: 0%;
+  }
+  #footer-p {
+    font-size: 10px;
+    margin: 0%;
+    background-color: #ebebeb;
+  }
+}
