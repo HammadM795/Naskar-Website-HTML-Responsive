@@ -27,12 +27,10 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-  display: inline-block;
   color: #3f3f3f;
   font-weight: bold;
   transition: all 0.3s ease-in-out;
 }
-
 nav ul li a:hover {
   color: black;
   padding-bottom: 8px;
@@ -44,35 +42,41 @@ nav ul li a.active {
   border-bottom: 3px solid red;
 }
 .toggle-btn {
-  width: 35px;
-  position: relative;
-  top: 40px;
-  right: 80px;
   display: none;
+  float: right;
+  position: absolute;
+  right: 1rem;
+  font-size: 38px;
+  top: 12px;
+  cursor: pointer;
 }
-.fa-bars {
-  font-size: 22px;
-}
+
 .landing-page {
   align-items: center;
   text-align: center;
   justify-content: center;
+  margin-top: 11em;
 }
 #logo {
-  margin-top: 9rem;
   width: 46rem;
 }
-#landing-page-text {
+.landing-page-text {
   color: white;
-  margin-top: 2rem;
   font-size: 23px;
   line-height: 32px;
+  text-align: center;
+  margin-top: 1em;
+}
+.buttons {
+  text-align: center;
+  justify-content: center;
+  margin-top: 1em;
 }
 .button {
   background-color: #0e0d09;
   color: white;
   margin: 5rem 3rem;
-  padding: 9px 18px;
+  padding: 9px 20px;
   font-size: 22px;
   cursor: pointer;
   border: none;
@@ -84,7 +88,7 @@ nav ul li a.active {
 }
 .social-icons {
   position: absolute;
-  right: 4rem;
+  right: 5rem;
   top: 14rem;
   font-size: 24px;
   cursor: pointer;
@@ -138,11 +142,23 @@ h1 {
 .since-detail {
   text-align: left;
   line-height: 28px;
-  margin: 1rem 2rem;
+  margin: 1rem;
+}
+.paragraph {
+  margin: 0% 15.5rem;
 }
 .paragraph-2 {
   display: grid;
   justify-content: center;
+}
+.paragraph2 {
+  margin: 0px 16.5rem;
+}
+.paragraph-2 h1 {
+  margin-top: 5px;
+}
+.paragraph-2 .buttons .button {
+  margin: 20px 25px;
 }
 .team-paragraph {
   line-height: 28px;
@@ -154,7 +170,11 @@ h1 {
 #bold-para {
   color: #3f3f3f;
   font-weight: bold;
-  margin-top: 3rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 16.5rem;
   font-size: 18px;
 }
 .paragraph-2 .buttons {
@@ -181,6 +201,7 @@ h1 {
 }
 .suppliers-body h1 {
   color: white;
+  margin-bottom: 1.5rem;
 }
 #suppliers-logo {
   max-width: 100%;
@@ -239,141 +260,261 @@ h4 {
 
 #footer-p {
   text-align: center;
-  margin-top: 3.5rem;
+  background-color: #cfcfcf;
+  padding: 20px;
+  margin-top: 2rem;
 }
 /* FOOTER-SECTION-END */
 
 /* Media Queries */
-@media only screen and (max-width: 767px) {
+
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+  .toggle-btn {
+    display: none;
+  }
+  .landing-page {
+    margin-top: 6em;
+  }
+  #logo {
+    width: 70%;
+  }
+  .landing-page-text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .landing-page-image {
+    height: 50vh;
+  }
+  .social-icons {
+    font-size: 18px;
+    top: 9rem;
+    right: 3rem;
+  }
+  .button {
+    margin: 0px;
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+  .since-bg-img {
+    height: 93vh;
+    top: 20rem;
+  }
+  .since-data {
+    top: 13.5rem;
+  }
+  .since-data h1 {
+    font-size: 34px;
+  }
+  .paragraph {
+    margin: 0% 6rem;
+  }
+  .since-detail {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .paragraph2 {
+    margin: 0% 6.8rem;
+  }
+  .team-paragraph {
+    line-height: 21px;
+    font-size: 18px;
+    margin: 15px 0%;
+  }
+  #bold-para {
+    margin: 10px 6.8rem;
+    font-size: 16px;
+  }
+  .suppliers {
+    height: 76vh;
+    top: 66rem;
+  }
+  .suppliers-body {
+    top: 12rem;
+  }
+  .suppliers-body h1 {
+    font-size: 34px;
+  }
+  #suppliers-logo {
+    width: 90%;
+  }
+  .footer {
+    top: 57rem;
+    height: 50vh;
+  }
+  .footer-body {
+    top: 13rem;
+  }
+  .footer-header h1 {
+    font-size: 34px;
+  }
+  .footer-body {
+    background-color: #ebebeb;
+  }
+  .col-1 {
+    margin: 2rem 5rem;
+  }
+  .col-2 {
+    margin: 2rem 5rem;
+  }
+  #footer-p {
+    margin: 0%;
+    padding: 20px;
+    background-color: #cfcfcf;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
   header {
+    background-color: white;
+    opacity: 90%;
+    max-height: 57px;
   }
-  nav li a:hover {
-    padding-bottom: 3px;
-    border-bottom: 2px solid red;
+  nav {
+    display: none;
+    width: 100%;
+    background-color: white;
+    padding: 10px;
   }
-  nav li a.active {
-    padding-bottom: 3px;
-    border-bottom: 2px solid red;
+  nav ul {
+    display: block;
+    text-align: left;
+    padding: 0%;
+  }
+  nav ul li {
+    max-width: 100%;
+    display: block;
+    padding-bottom: 10px;
+  }
+  nav ul li a:hover {
+    border-bottom: 1px solid #ff0000;
+  }
+  nav.show {
+    display: block;
+    padding: 0%;
   }
   .toggle-btn {
     display: block;
-    position: absolute;
-    right: 1.5rem;
-    top: 8px;
   }
   .landing-page-image {
-    width: 100%;
-    height: 50vh;
+    height: 46vh;
     z-index: 90;
   }
   #logo {
     width: 70%;
-    margin: 0%;
   }
   .landing-page {
-    z-index: 70;
+    margin-top: 6em;
   }
-  #landing-page-text {
-    font-size: 10px;
-    line-height: 16px;
-    margin: 0%;
+  .landing-page-text {
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: 1em;
   }
-  .social-icons {
-    top: 5rem;
-    font-size: 11px;
-    right: 1.5rem;
-  }
-  .fa-facebook-f {
-    padding: 3px 6px;
-  }
-  .fa-instagram {
-    padding: 3px 5px;
-    margin-top: 8px;
+  .buttons {
+    margin-top: 3em;
   }
   .button {
-    margin: 5px;
-    font-size: 6px;
+    font-size: 12px;
+    z-index: 60;
     padding: 5px 10px;
   }
+  .social-icons {
+    font-size: 16px;
+    top: 10rem;
+    right: 2.5rem;
+  }
   .since-bg-img {
-    height: 80vh;
-    top: 10.5rem;
-  }
-  .since-data {
-    top: 6rem;
-  }
-  .paragraph {
-    display: inline-flex;
-  }
-  h1 {
-    font-size: 18px;
-    text-align: center;
-  }
-  .since-detail {
-    font-size: 6px;
-    line-height: 10px;
-    margin: 0% 1rem;
-    padding: 5px;
-  }
-  .paragraph-2 {
-    font-size: 6px;
-  }
-  .team-paragraph {
-    line-height: 10px;
-    margin-top: 8px;
-  }
-  #bold-para {
-    margin-top: 8px;
-    line-height: 10px;
-    font-size: 7px;
-  }
-  .paragraph-2 .buttons {
-    margin: 0%;
-  }
-  .suppliers {
-    height: 90vh;
-    top: 28.8rem;
-  }
-  .suppliers-body {
-    top: 5rem;
-  }
-  .footer {
-    height: 44vh;
+    height: 74vh;
     top: 20rem;
   }
+  .since-data {
+    top: 11rem;
+  }
+  .since-data h1 {
+    font-size: 26px;
+  }
+  .since-detail {
+    font-size: 14px;
+    line-height: 22px;
+    padding: 10px;
+    margin: 0%;
+  }
+  .paragraph {
+    margin: 0% 4rem;
+    display: block;
+  }
+  .paragraph-2 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0% 4.5rem;
+  }
+  .paragraph-2 h1 {
+    margin-top: 0px;
+  }
+  .paragraph2 {
+    margin: 0%;
+  }
+  .team-paragraph {
+    line-height: 22px;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  #bold-para {
+    margin: 10px 0px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .button {
+    margin: 0px;
+  }
+  .suppliers {
+    height: 60vh;
+    top: 57rem;
+  }
+  .suppliers-body {
+    top: 7rem;
+  }
+  .suppliers-body h1 {
+    font-size: 26px;
+  }
+  #suppliers-logo {
+    width: 90%;
+  }
+  .footer {
+    height: 41vh;
+    top: 50rem;
+  }
   .footer-body {
-    bottom: -5.5rem;
+    top: 10rem;
+    background-color: #ebebeb;
   }
-  .columns {
-    display: inline-flex;
-    font-size: 6px;
-  }
-  .manager {
-    margin: 0%;
-    line-height: 10px;
-  }
-  .address {
-    line-height: 11px;
-    margin: 0%;
-  }
-  h4 {
-    margin-bottom: 0px;
-  }
-  .menlyn {
-    margin: 5px;
-  }
-  .monday {
-    line-height: 11px;
+  .footer-header h1 {
+    font-size: 26px;
   }
   .col-1 {
-    margin: 0%;
+    margin: 1rem;
   }
   .col-2 {
-    margin: 0%;
+    margin: 1rem;
+  }
+  .columns {
+    display: block;
+  }
+  .menlyn {
+    margin-top: 5px;
+  }
+  .manager {
+    margin: 5px 4rem;
+    line-height: 22px;
+  }
+  .monday {
+    margin: 5px 4rem;
+    line-height: 22px;
   }
   #footer-p {
-    font-size: 10px;
     margin: 0%;
-    background-color: #ebebeb;
+    background-color: #cfcfcf;
+    padding: 10px;
   }
 }
