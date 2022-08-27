@@ -302,65 +302,83 @@ h4 {
     display: none;
   }
   .landing-page {
-    margin-top: 6em;
+    margin-top: 3.5em;
   }
   #logo {
-    width: 70%;
+    width: 60%;
   }
   .landing-page-text {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 24px;
   }
   .landing-page-image {
-    height: 51vh;
+    height: 63vh;
   }
   .social-icons {
-    font-size: 18px;
+    font-size: 14px;
     top: 9rem;
     right: 3rem;
   }
-  .button {
-    margin: 0px;
+  .buttons {
+    padding: 2em;
+  }
+  .our-stories {
     padding: 6px 12px;
-    font-size: 14px;
+    font-size: 12px;
+    margin: 0px 2rem;
+  }
+  .contact-us {
+    padding: 6px 12px;
+    font-size: 12px;
+    margin: 0px 2rem;
   }
   .since-bg-img {
-    height: 95.5vh;
-    top: 20rem;
+    height: 120.5vh;
+    top: 12.1rem;
+    z-index: -1;
   }
   .since-data {
-    top: 14rem;
+    top: 10.7rem;
     width: 100%;
   }
   .since-data h1 {
-    font-size: 34px;
+    font-size: 28px;
   }
   .paragraph {
     margin: 0% 7rem;
   }
   .since-detail {
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 0rem 1rem;
+  }
+  .paragraph-2 {
+    margin: 10px 0px;
+  }
+  .paragraph-2 .buttons {
+    padding: 1em;
   }
   .paragraph2 {
     padding: 0px 8rem;
   }
   .team-paragraph {
-    line-height: 21px;
-    font-size: 18px;
+    font-size: 14px;
+    line-height: 20px;
     margin: 0px 0%;
   }
   #bold-para {
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 20px;
     padding: 0px 8rem;
-    margin-top: 1rem;
   }
   .suppliers {
-    height: 78vh;
-    top: 34.5rem;
+    height: 75vh;
+    top: 28.5rem;
+    z-index: 2;
   }
   .suppliers-body {
     width: 100%;
+    top: 6rem;
   }
   .suppliers-body h1 {
     font-size: 34px;
@@ -369,7 +387,8 @@ h4 {
     width: 80%;
   }
   .footer {
-    height: 50vh;
+    height: 77vh;
+    top: 1rem;
   }
   .footer-body {
     top: 13rem;
@@ -379,17 +398,24 @@ h4 {
   }
   .footer-body {
     background-color: #ebebeb;
+    top: 10.5rem;
   }
   .col-1 {
-    margin: 2rem 5rem;
+    margin: 2rem 2rem;
   }
   .col-2 {
-    margin: 2rem 5rem;
+    margin: 2rem 2rem;
+  }
+  .manager {
+    line-height: 20px;
+  }
+  .monday {
+    line-height: 20px;
   }
   #footer-p {
     margin: 0%;
-    padding: 20px;
-    background-color: #ebebeb;
+    padding: 15px;
+    font-size: 14px;
   }
 }
 
