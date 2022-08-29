@@ -302,7 +302,7 @@ h4 {
     display: none;
   }
   .landing-page {
-    margin-top: 3.5em;
+    margin-top: 6em;
   }
   #logo {
     width: 60%;
@@ -312,7 +312,7 @@ h4 {
     line-height: 24px;
   }
   .landing-page-image {
-    height: 63vh;
+    height: 53vh;
   }
   .social-icons {
     font-size: 14px;
@@ -334,11 +334,11 @@ h4 {
   }
   .since-bg-img {
     height: 120.5vh;
-    top: 12.1rem;
+    top: 15.1rem;
     z-index: -1;
   }
   .since-data {
-    top: 10.7rem;
+    top: 13.7rem;
     width: 100%;
   }
   .since-data h1 {
@@ -349,27 +349,28 @@ h4 {
   }
   .since-detail {
     font-size: 14px;
-    line-height: 18px;
+    line-height: 20px;
     padding: 0rem 1rem;
   }
   .paragraph-2 {
     margin: 10px 0px;
   }
   .paragraph-2 .buttons {
-    padding: 1em;
+    padding: 1.5em;
   }
   .paragraph2 {
     padding: 0px 8rem;
   }
   .team-paragraph {
     font-size: 14px;
+    margin-top: 15px;
     line-height: 20px;
-    margin: 0px 0%;
   }
   #bold-para {
     font-size: 14px;
     line-height: 20px;
     padding: 0px 8rem;
+    margin-top: 15px;
   }
   .suppliers {
     height: 75vh;
@@ -378,27 +379,25 @@ h4 {
   }
   .suppliers-body {
     width: 100%;
-    top: 6rem;
+    bottom: 2rem;
   }
   .suppliers-body h1 {
-    font-size: 34px;
+    font-size: 42px;
+    margin-top: 5px;
   }
   #suppliers-logo {
-    width: 80%;
+    width: 90%;
   }
   .footer {
-    height: 77vh;
-    top: 1rem;
-  }
-  .footer-body {
-    top: 13rem;
+    height: 63vh;
+    bottom: 7rem;
   }
   .footer-header h1 {
     font-size: 34px;
   }
   .footer-body {
     background-color: #ebebeb;
-    top: 10.5rem;
+    top: 13.5rem;
   }
   .col-1 {
     margin: 2rem 2rem;
@@ -418,7 +417,6 @@ h4 {
     font-size: 14px;
   }
 }
-
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   header {
     background-color: white;
@@ -453,14 +451,14 @@ h4 {
     visibility: visible;
   }
   .landing-page-image {
-    max-height: 60vh;
+    max-height: 42vh;
     z-index: 90;
   }
   #logo {
     width: 70%;
   }
   .landing-page {
-    margin-top: 5em;
+    margin-top: 3em;
   }
   .landing-page-text {
     font-size: 18px;
@@ -468,13 +466,17 @@ h4 {
     margin-top: 1em;
   }
   .buttons {
-    margin: 3rem;
+    margin: 2em 0px;
+    padding: 0%;
   }
-  .button {
-    font-size: 12px;
-    z-index: 60;
-    padding: 5px 10px;
-    margin: 0% 2rem;
+  .contact-us {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+  .our-stories {
+    padding: 8px 15px;
+    margin: 0%;
+    font-size: 14px;
   }
   .social-icons {
     font-size: 16px;
@@ -482,8 +484,8 @@ h4 {
     right: 2.5rem;
   }
   .since-bg-img {
-    height: 95.5vh;
-    top: 20rem;
+    height: 77vh;
+    top: 11.5rem;
   }
   .since-data {
     top: 11rem;
@@ -494,9 +496,9 @@ h4 {
   }
   .since-detail {
     font-size: 14px;
-    line-height: 22px;
+    line-height: 19px;
     margin: 0%;
-    padding: 5px 20px;
+    padding: 7px 20px;
   }
   .paragraph {
     margin: 0% 4.5rem;
@@ -516,39 +518,36 @@ h4 {
     padding: 0% 1rem;
   }
   .team-paragraph {
-    line-height: 22px;
-    margin-top: 15px;
+    line-height: 19px;
+    margin-top: 10px;
     font-size: 14px;
   }
   #bold-para {
     margin: 10px 0px;
     font-size: 14px;
-    line-height: 22px;
+    line-height: 19px;
     padding: 0% 1rem;
-  }
-  .paragraph-2 .buttons .button {
-    margin: 0px 25px;
   }
   .suppliers {
     height: 79vh;
-    top: 23rem;
+    top: 21rem;
   }
   .suppliers-body {
-    top: -3rem;
+    bottom: 5rem;
     width: 100%;
   }
-
   .suppliers-body h1 {
     font-size: 26px;
   }
   #suppliers-logo {
-    width: 90%;
+    width: 95%;
     height: auto;
   }
   .footer {
-    height: 30vh;
-    top: 82.7rem;
+    height: 23vh;
+    top: 71.7rem;
     position: absolute;
+    z-index: -1;
   }
   .footer-body {
     top: 10rem;
@@ -557,11 +556,18 @@ h4 {
   .footer-header h1 {
     font-size: 26px;
   }
+
   .col-1 {
-    margin: 1rem;
+    margin: 1rem 6rem;
+  }
+  .col-1 h2 {
+    margin-left: 63px;
   }
   .col-2 {
-    margin: 1rem;
+    margin: 1.5rem 6rem;
+  }
+  .col-2 h2 {
+    margin-left: 63px;
   }
   .columns {
     display: block;
@@ -573,13 +579,195 @@ h4 {
     margin: 5px 4rem;
     line-height: 22px;
   }
+  .manager h4 {
+    margin-top: 28px;
+  }
   .monday {
     margin: 5px 4rem;
     line-height: 22px;
   }
   #footer-p {
     margin: 0%;
-    background-color: #ebebeb;
+    padding: 15px;
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  header {
+    background-color: white;
+    opacity: 90%;
+    height: 57px;
+  }
+  nav {
+    display: none;
+    width: 100%;
+    background-color: white;
     padding: 10px;
+  }
+  nav ul {
+    display: block;
+    text-align: left;
+    padding: 0%;
+  }
+  nav ul li {
+    max-width: 100%;
+    display: block;
+    padding-bottom: 10px;
+    overflow: hidden;
+  }
+  nav ul li a:hover {
+    border-bottom: 1px solid #ff0000;
+  }
+  nav.show {
+    display: block;
+    padding: 0%;
+  }
+  .toggle-btn {
+    visibility: visible;
+  }
+  .landing-page-image {
+    max-height: 31.5vh;
+    z-index: 90;
+  }
+  #logo {
+    width: 60%;
+  }
+  .landing-page {
+    margin-top: 2em;
+  }
+  .landing-page-text {
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 8px;
+  }
+  .buttons {
+    margin: 1em 0px;
+    padding: 0%;
+  }
+  .contact-us {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+  .our-stories {
+    padding: 5px 10px;
+    margin: 0%;
+    font-size: 12px;
+  }
+  .social-icons {
+    font-size: 11px;
+    top: 8rem;
+    right: 2rem;
+  }
+  .since-bg-img {
+    height: 100vh;
+    top: 6.5rem;
+    background-position: center;
+  }
+  .since-data {
+    top: 11.3rem;
+    width: 100%;
+  }
+  .since-data h1 {
+    font-size: 26px;
+  }
+  .since-detail {
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0%;
+    padding: 7px 20px;
+  }
+  .paragraph {
+    margin: 0% 3rem;
+    display: block;
+  }
+  .paragraph-2 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0% 3rem;
+  }
+  .paragraph-2 h1 {
+    margin-top: 0px;
+  }
+  .paragraph2 {
+    margin: 0%;
+    padding: 0% 1rem;
+  }
+  .team-paragraph {
+    line-height: 18px;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  #bold-para {
+    margin: 10px 0px;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 0% 10px;
+  }
+  #bold-para + .buttons {
+    margin-top: 1em;
+  }
+  .suppliers {
+    height: 46vh;
+    top: 31.5rem;
+    z-index: 1;
+  }
+  .suppliers-body {
+    top: 13.2rem;
+    width: 100%;
+  }
+  .suppliers-body h1 {
+    font-size: 26px;
+  }
+  #suppliers-logo {
+    width: 95%;
+    height: auto;
+  }
+  .footer {
+    height: 23vh;
+    top: 63.5rem;
+    position: absolute;
+    z-index: -1;
+  }
+  .footer-body {
+    top: 7.5rem;
+    background-color: #ebebeb;
+  }
+  .footer-header h1 {
+    font-size: 26px;
+  }
+  .col-1 {
+    margin: 10px;
+  }
+  .col-1 h2 {
+    margin-left: 63px;
+  }
+  .col-2 {
+    margin: 15px 5px;
+  }
+  .col-2 h2 {
+    margin-left: 63px;
+  }
+  .columns {
+    display: block;
+  }
+  .menlyn {
+    margin-top: 3px;
+  }
+  .manager {
+    margin: 5px 4rem;
+    line-height: 22px;
+  }
+  .manager h4 {
+    margin-top: 28px;
+  }
+  .monday {
+    margin: 5px 4rem;
+    line-height: 22px;
+  }
+  #footer-p {
+    margin: 0%;
+    padding: 10px;
+    font-size: 12px;
   }
 }
