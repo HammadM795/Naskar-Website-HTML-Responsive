@@ -106,7 +106,6 @@ nav ul li a.active {
   right: 5rem;
   top: 14rem;
   font-size: 24px;
-  z-index: 95;
   cursor: pointer;
 }
 .fa-facebook-f {
@@ -301,6 +300,11 @@ h4 {
 /* FOOTER-SECTION-END */
 
 /* Media Queries */
+@media only screen and (min-width: 991px) and (max-width: 1338px) {
+  .since-bg-img {
+    top: 34rem;
+  }
+}
 
 @media only screen and (min-width: 768px) and (max-width: 990px) {
   .landing-page-image {
@@ -323,7 +327,6 @@ h4 {
   .social-icons {
     top: 11rem;
     right: 2rem;
-    z-index: 95;
   }
   .buttons {
     padding: 0%;
@@ -397,7 +400,6 @@ h4 {
   .footer {
     background-image: none;
     top: 0%;
-    height: auto;
   }
   .footer-body {
     background-color: #ebebeb;
@@ -482,7 +484,6 @@ h4 {
     font-size: 16px;
     top: 10rem;
     right: 2.5rem;
-    z-index: 95;
   }
   .since-bg-img {
     background-image: url(images/White-image-rectangle-shape.png);
@@ -553,7 +554,6 @@ h4 {
   .footer {
     background-image: none;
     top: 31rem;
-    height: auto;
     z-index: 3;
   }
   .footer-body {
@@ -674,7 +674,6 @@ h4 {
     padding: 4px;
     top: 9rem;
     right: 2.5rem;
-    z-index: 95;
   }
   .since-bg-img {
     background-image: url(images/White-image-rectangle-shape.png);
@@ -747,7 +746,6 @@ h4 {
   .footer {
     background-image: none;
     top: 32rem;
-    height: auto;
     z-index: 3;
   }
   .footer-body {
@@ -868,7 +866,6 @@ h4 {
     padding: 3px;
     top: 11.5rem;
     right: 13rem;
-    z-index: 95;
     visibility: hidden;
   }
   .fa-facebook-f {
@@ -947,7 +944,6 @@ h4 {
   .footer {
     background-image: none;
     top: 31rem;
-    height: auto;
     z-index: 3;
   }
   .footer-body {
@@ -1072,7 +1068,6 @@ h4 {
     padding: 4px;
     top: 9rem;
     right: 2.5rem;
-    z-index: 95;
     visibility: hidden;
   }
   .since-bg-img {
@@ -1147,7 +1142,6 @@ h4 {
   .footer {
     background-image: none;
     top: 36rem;
-    height: auto;
     z-index: 3;
   }
   .footer-body {
